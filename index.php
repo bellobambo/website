@@ -103,9 +103,9 @@ Order a Pizza</button>
 
 <body>
     <form action="index.php" method="post">
-        <label>Enter a Number to count to :</label>
-        <input type="text" name="counter">
-        <input type="submit" value="start">
+      <label for="">Enter a country:</label>
+      <input type="text" name="country" id="">
+      <input type="submit" value="submit">
     </form>
 
 </body>
@@ -117,11 +117,82 @@ Order a Pizza</button>
 
 <?php
 
-$counter = $_POST["counter"];
 
-for ($i = 0; $i <= $counter; $i++) {
-    echo $i . "<br>";
-}
+
+
+
+$capitals = array(
+    "USA" => "Washington DC",
+    "japan" => "Kyoto",
+    "south-korea" => "Seoul",
+    "india" => "New Delhi",
+
+);
+
+
+$captical = $capitals[$_POST["country"]];
+
+echo $captical;
+
+
+// array_shift($capitals);
+// $capitals = array_flip($capitals);
+
+// foreach ($capitals as $key => $value)  {
+//     echo "{$key} = {$value} <br>";
+// }
+// ;
+
+
+// echo $capitals["japan"];
+
+
+// $foods = array("apple", "mango", "banana", "pineapple");
+
+
+// $foods[0] = "dragonfruit";
+
+
+// array_push($foods,"rice", "kiwi");
+
+// array_pop($foods);
+
+// $reversed =  array_reverse($foods);
+
+
+
+// foreach ($reversed as $food) {
+//     echo $food . "<br>";
+// }
+
+// $sounds = 0;
+// $running = true;
+
+// while ($running) {
+
+//     if(isset($_POST['stop'])){
+//         $running = false;   
+//     }else{
+//         $sounds++;
+//         echo $sounds . "<br>";
+
+//     }
+
+// }
+
+
+
+// while( $counter <= 10){
+//  $counter++;
+//  echo $counter . '<br>';
+// }
+
+
+// $counter = $_POST["counter"];
+
+// for ($i = $counter ; $i >0;  $i--) {
+//     echo $i . "<br>";
+// }
 
 
 // for($i = 10 ;$i > 0; $i-- ){
