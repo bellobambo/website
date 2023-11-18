@@ -102,27 +102,127 @@ Order a Pizza</button>
 </head>
 
 <body>
-    <!-- <form action="index.php" method="post">
-
-        <label>radius:</label>
-        <input type="text" name='radius'>
-        <input type="submit" value="calculate">
-    </form> -->
+    <form action="index.php" method="post">
+        <label>Enter a Number to count to :</label>
+        <input type="text" name="counter">
+        <input type="submit" value="start">
+    </form>
 
 </body>
 
 </html>
 
 
+
+
 <?php
 
-$temp = 100;
+$counter = $_POST["counter"];
 
-
-if ($temp >= 0 && $tem <= 30 ) {
-    echo "the weather is pleasant";
+for ($i = 0; $i <= $counter; $i++) {
+    echo $i . "<br>";
 }
 
+
+// for($i = 10 ;$i > 0; $i-- ){
+//     echo $i . "<br>";
+// }
+
+
+// $grade = "rice";
+
+// $date = date("1");
+// $date = "pizza";
+
+
+// switch ($date) {
+//     case 'Monday':
+//         echo'i hate mondays';
+//         break;
+
+//     case 'Tuesday':
+//         echo'Taco tuesday';
+//         break;
+//     case 'Wednesday':
+//         echo'work week is half over';
+//         break;
+//     case 'Thursday':
+//         echo'almost the weekend';
+//         break;
+//     case 'Friday':
+//         echo'the weekend is here';
+//         break;
+//     case 'Saturday':
+//         echo'Time to Party';
+//         break;
+//     case 'Sunday':
+//         echo'Time to Relax';
+//         break;
+
+//     default:
+//         echo"{$date} is not a day";
+// }
+
+// switch ($grade) {
+//     case "A":
+//         echo"You did great";
+//         break;
+//     case "B":
+//             echo"You did good";
+//             break;    
+//     case "C":
+//         echo"You did okay";
+//         break;
+//     case "D":
+//         echo"You did poorly";
+//         break;
+//     case "E":
+//         echo"You did bad";
+//         break;
+//     case "F":
+//         echo"You failed";
+//         break;
+//     default:
+//         echo"{$grade} is not valid";    
+
+// }
+
+// $child = false;
+// $senior = false;
+// $ticket = null;
+
+// if ($child || $senior) {
+//     $ticket = 10;
+// } else {
+//     $ticket = 15;
+// }
+
+// echo"the ticket price is \${$ticket}";
+
+// $age = 12;
+// $citizen = true;
+
+// if($age >= 18 && $citizen){
+// echo"you can now vote";
+// }else{
+//     echo "you cant vote";
+// }
+
+// $temp = 15;
+// $cloudy = true;
+
+
+// if ($temp < 0 || $temp > 30) {
+//     echo "the weather is pleasant";
+// } else {
+//     echo "the weather is bad <br>";
+// }
+
+// if (!$cloudy) {
+//     echo "its cloudy";
+// }else{
+//     echo "its sunny";
+// }
 
 // $hours = 50;
 // $rate = 15;
