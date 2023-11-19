@@ -102,11 +102,13 @@ Order a Pizza</button>
 </head>
 
 <body>
-    <form action="index.php" method="post">
-      <label for="">Enter a country:</label>
-      <input type="text" name="country" id="">
-      <input type="submit" value="submit">
-    </form>
+    <!-- <form action="index.php" method="post">
+        <input type="checkbox" name="foods[]" value="pizza"> Pizza <br>
+        <input type="checkbox" name="foods[]" value="Hamburger"> Hamburger <br>
+        <input type="checkbox" name="foods[]" value="Hotdog"> Hotdog <br>
+        <input type="checkbox" name="foods[]" value="Taco"> Taco <br>
+        <input type="submit" value="submit" name='submit'>
+    </form> -->
 
 </body>
 
@@ -120,19 +122,124 @@ Order a Pizza</button>
 
 
 
+// function happy_birthday($firstname, $age){
+//     echo"Happy birthday to you {$firstname} <br>";
+//     echo"Happy birthday to you {$firstname}<br>";
+//     echo"Happy birthday {$age} to you <br> <br>";
+// }
 
-$capitals = array(
-    "USA" => "Washington DC",
-    "japan" => "Kyoto",
-    "south-korea" => "Seoul",
-    "india" => "New Delhi",
-
-);
+// happy_birthday("SpongeBob" , 30);
+// happy_birthday("patrick" , 30);
+// happy_birthday("sandy" , 30);
 
 
-$captical = $capitals[$_POST["country"]];
+// if(isset($_POST["submit"])){
 
-echo $captical;
+
+//     $foods = $_POST["foods"];
+
+//     foreach($foods as $food){
+//         echo $food . "<br>";
+//     }
+
+    // if(isset($_POST["pizza"])){
+    //     echo"You like Pizza <br>";
+    // }
+    // if(isset($_POST["hamburger"])){
+    //     echo"You like hamburger <br>";
+    // }
+    // if(isset($_POST["hotdog"])){
+    //     echo"You like hotdog <br>";
+    // }
+    // if(isset($_POST["taco"])){
+    //     echo"You like tacos <br>";
+    // }
+    // if(empty($_POST["pizza"])){
+    //     echo"You dont like Pizza <br>";
+    // }
+    // if(empty($_POST["hamburger"])){
+    //     echo"You dont like hamburger <br>";
+    // }
+    // if(empty($_POST["hotdog"])){
+    //     echo"You dont like hotdog <br>";
+    // }
+    // if(empty($_POST["taco"])){
+    //     echo"You dont like tacos <br>";
+    // }
+
+// }
+
+
+// if (isset($_POST['confirm'])) {
+
+//     $credit_card = null;
+
+//     if(isset($_POST["credit_card"])){
+//         $credit_card = $_POST["credit_card"];
+//     }
+
+//    switch($credit_card){
+//         case 'Visa':
+//             echo"You selected Visa";
+//             break; 
+//         case 'MasterCard':
+//             echo"You selected MasterCard";
+//             break; 
+//         case 'Express':
+//             echo"You selected Express";
+//             break; 
+//         default :
+//         echo"Pls make a selection";     
+//    }
+// }
+// $credit_card = $_POST["credit_card"]
+
+
+// foreach ($_POST as $key => $value) {
+//     echo "{$key} = {$value} <br>";
+// }
+
+// if (isset($_POST["login"])) {
+
+//     $username = $_POST["username"];
+//     $password = $_POST["password"];
+
+//     if (empty($username)) {
+//         echo "Username is missing";
+//     } elseif (empty($password)) {
+//         echo "password is missing";
+//     } else {
+//         echo "Hello{$username}";
+//     }
+
+// }
+
+
+// $username = null;
+
+
+// if (empty($username)) {
+//     echo "This Variable is empty";
+// }else{
+//     echo "This Var is not set";
+// }
+
+
+
+
+
+// $capitals = array(
+//     "USA" => "Washington DC",
+//     "japan" => "Kyoto",
+//     "south-korea" => "Seoul",
+//     "india" => "New Delhi",
+
+// );
+
+
+// $captical = $capitals[$_POST["country"]];
+
+// echo $captical;
 
 
 // array_shift($capitals);
